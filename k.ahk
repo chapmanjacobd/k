@@ -191,17 +191,51 @@ Return
     *z::Send ^z
 *x::Send ^x
 *c::Send ^c
+*v::Send ^v
+*b::Send ^b
+*n::Send ^n
+*m::Send ^m
+*a::Send ^a
 *s::Send ^s
-*d::Send ^r
-*r::Send ^p
-*b::Send ^d
+*d::Send ^d
+*f::Send ^f
+*g::Send ^g
+*h::Send ^h
+*j::Send ^j
+*k::Send ^k
+*l::Send ^l
+*e::Send ^e
+*r::Send ^r
+*t::Send ^t
+*y::Send ^y
+*u::Send ^u
+*i::Send ^i
+*o::Send ^o
+*p::Send ^p
 *+z::Send ^+z
 *+x::Send ^+x
 *+c::Send ^+c
+*+v::Send ^+v
+*+b::Send ^+b
+*+n::Send ^+n
+*+m::Send ^+m
+*+a::Send ^+a
 *+s::Send ^+s
-*+d::Send ^+r
-*+r::Send ^+p
-*+b::Send ^+d
+*+d::Send ^+d
+*+f::Send ^+f
+*+g::Send ^+g
+*+h::Send ^+h
+*+j::Send ^+j
+*+k::Send ^+k
+*+l::Send ^+l
+*+e::Send ^+e
+*+r::Send ^+r
+*+t::Send ^+t
+*+y::Send ^+y
+*+u::Send ^+u
+*+i::Send ^+i
+*+o::Send ^+o
+*+p::Send ^+p
 return
 Lalt::
     KeyWait, Lalt
@@ -228,9 +262,9 @@ Return
 *y::Send {Home}
 *u::Send {Up}
 *i::Send {End}
-*o::MouseMove, -15,-20, 0, R
-*p::MouseMove, 0,-20, 0, R
-*[::MouseMove, 15,-20, 0, R
+; *o::MouseMove, -15,-20, 0, R
+; *p::MouseMove, 0,-20, 0, R
+; *[::MouseMove, 15,-20, 0, R
 *]::]
 *\::Capslock
 *a::a
@@ -240,8 +274,8 @@ Return
 *g::g
 *h::Send {Left}
 *j::Send {Down}
-*k::Send {Right}
-*l::MouseMove, -20, 0, 0, R
+*k::Send {Up}
+*l::Send {Right}
 *`;::
 CoordMode, Mouse, Screen
 MouseMove, (A_ScreenWidth // 2), (A_ScreenHeight // 2)
@@ -279,10 +313,10 @@ return
 *+y::Send ^{Home}
 *+u::Send {Alt Down}+{Up}{Alt Up}
 *+i::Send ^{End}
-*+o::MouseMove, -215,-220, 0, R
-*+p::MouseMove, 0,-220, 0, R
-*+[::MouseMove, 215,-220, 0, R
-*+]::]
+; *+o::MouseMove, -215,-220, 0, R
+; *+p::MouseMove, 0,-220, 0, R
+; *+[::MouseMove, 215,-220, 0, R
+; *+]::]
 *+\::\
 *+a::a
 *+s::Send {F2}
@@ -291,8 +325,8 @@ return
 *+g::g
 *+h::Send {Alt Down}+{Left}{Alt Up}
 *+j::Send {Alt Down}+{Down}{Alt Up}
-*+k::Send {Alt Down}+{Right}{Alt Up}
-*+l::MouseMove, -220, 0, 0, R
+*+k::Send {Alt Down}+{Up}{Alt Up}
+*+l::Send {Alt Down}+{Right}{Alt Up}
 *+`;::
 CoordMode, Mouse, Screen
 MouseMove, (A_ScreenWidth // 4), (A_ScreenHeight // 4)
